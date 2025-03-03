@@ -1,0 +1,20 @@
+{
+  "extends": "@modern-js/tsconfig/base",
+  "compilerOptions": {
+    "declaration": false,
+    "jsx": "react-jsx",
+    "baseUrl": "./",
+    "strictNullChecks": false,
+    "noImplicitAny": false,
+    "strict": false,
+    "paths": {
+      "@/*": ["./src/*"],
+      "@shared/*": ["./shared/*"]
+    },
+    "types": ["react", "react-dom", "jest"],
+    "target": "esnext",
+    "module": "esnext"
+  },
+  "include": ["src", "shared", "config", "modern.config.ts", "src/types/global.d.ts"],
+  "exclude": ["node_modules", "src/assets"]
+}

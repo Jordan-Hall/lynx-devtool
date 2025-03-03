@@ -1,0 +1,61 @@
+# Node.js dependencies
+node_modules/
+**/node_modules/
+
+# pnpm specific files
+pnpm-lock.yaml
+.pnp.*
+.pnpm-debug.log
+
+# Build outputs
+**/dist/
+
+# Temporary files
+**/.DS_Store
+.DS_Store
+Thumbs.db
+*.log
+*.tmp
+.tmp/
+.cache/
+.nyc_output/
+log/
+
+# TypeScript generated files
+*.tsbuildinfo
+
+# Environment variables
+.env
+.env.local
+.env.*.local
+
+# Editor/IDE specific files
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Yarn or other package manager files (if applicable)
+.yarn/
+.yarnrc.yml
+
+# Ignore lock files in subprojects (if they exist)
+**/package-lock.json
+**/yarn.lock
+
+# Ignore compiled JavaScript and map files
+**/*.js.map
+
+# Ignore gn build files
+.cipd/
+.gclient_entries
+.gclient_previous_sync_commits
+
+# Ignore Chrome Devtools output
+devtool.frontend.lynx_1.0.*.tar.gz
+devtool.frontend.web_1.0.*.tar.gz
+
+!packages/devtools-frontend-lynx/

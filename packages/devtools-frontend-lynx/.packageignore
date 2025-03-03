@@ -1,0 +1,6 @@
+*.map
+*.ts
+*.compressed
+*.hash
+*tsconfig.json
+*.stamp

@@ -1,0 +1,24 @@
+{
+  "name": "@lynx-dev/lynx-devtool-utils",
+  "version": "0.0.1-alpha.6",
+  "types": "./dist/types/index.d.ts",
+  "main": "./dist/lib/index.js",
+  "module": "./dist/es/index.js",
+  "license": "Apache-2.0",
+  "files": [
+    "dist",
+    "package.json"
+  ],
+  "scripts": {
+    "dev": "modern dev",
+    "build": "modern build",
+    "build:watch": "modern build -w"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@modern-js/module-tools": "2.63.2",
+    "@modern-js/tsconfig": "2.63.2",
+    "eslint-plugin-prettier": "~4.2.1",
+    "typescript": "~4.9.4"
+  }
+}

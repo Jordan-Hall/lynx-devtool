@@ -1,0 +1,6 @@
+build
+dist
+cjs
+output
+.vscode
+packages/lynx-devtool-web/config/public/lighthouse/**

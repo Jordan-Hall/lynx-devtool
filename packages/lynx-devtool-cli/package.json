@@ -1,0 +1,71 @@
+{
+  "name": "@lynx-dev/lynx-devtool-cli",
+  "version": "0.0.1-alpha.6",
+  "description": "Lynx DevTool toolkit",
+  "license": "Apache-2.0",
+  "main": "./dist/lib/index.js",
+  "module": "./dist/es/index.js",
+  "types": "./dist/types/index.d.ts",
+  "bin": {
+    "ldt": "bin/ldt.js"
+  },
+  "files": [
+    "bin",
+    "dist",
+    "resources",
+    "package.json"
+  ],
+  "scripts": {
+    "prebuild": "rm -rf dist",
+    "build": "tsc && npm run unzipResources",
+    "start": "bash scripts/start.sh cli",
+    "start:cli": "bash scripts/start.sh cli",
+    "start:cli:debug": "node bin/ldt.js start --upgradeChannel debug --debug true",
+    "unzipResources": "bash scripts/unzip-resources.sh"
+  },
+  "dependencies": {
+    "@lynx-dev/debug-router-connector": "0.0.2",
+    "@lynx-dev/lynx-devtool-utils": "workspace:*",
+    "asar": "^3.2.0",
+    "async": "3.2.4",
+    "axios": "^1.8.1",
+    "body-parser": "^1.20.1",
+    "buffer": "^6.0.3",
+    "chalk": "4.1.0",
+    "compare-versions": "4.1.3",
+    "compression": "^1.7.4",
+    "cors": "^2.8.5",
+    "decompress": "4.2.1",
+    "detect-port": "^1.5.1",
+    "execa": "5.1.1",
+    "express": "^4.18.2",
+    "express-static-gzip": "^2.1.7",
+    "form-data": "^4.0.0",
+    "fs-extra": "11.1.1",
+    "http-proxy-middleware": "2.0.6",
+    "node-fetch": "2.6.7",
+    "open": "^8.4.0",
+    "ping": "0.4.4",
+    "serve-favicon": "2.5.0",
+    "ws": "8.13.0",
+    "yargs": "17.7.2"
+  },
+  "devDependencies": {
+    "@types/async": "3.2.22",
+    "@types/compression": "^1.7.2",
+    "@types/cors": "^2.8.13",
+    "@types/decompress": "4.2.4",
+    "@types/detect-port": "^1.3.2",
+    "@types/express": "^4.17.11",
+    "@types/fs-extra": "^9.0.13",
+    "@types/ip": "^1.1.0",
+    "@types/jest": "~29.2.4",
+    "@types/multer": "^1.4.7",
+    "@types/node": "~16.11.7",
+    "concurrently": "8.0.1",
+    "cross-os": "1.5.0",
+    "multer": "1.4.5-lts.1",
+    "typescript": "~4.9.4",
+    "wait-on": "7.0.1"
+  }
+}
